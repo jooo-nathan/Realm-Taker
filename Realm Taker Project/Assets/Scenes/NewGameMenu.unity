@@ -652,7 +652,7 @@ GameObject:
   - component: {fileID: 752493357}
   - component: {fileID: 752493356}
   m_Layer: 5
-  m_Name: Main Menu Description
+  m_Name: New Game Description
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -697,10 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Selamat datang manusia. Biarkan aku memperkenalkan diri.
-
-    Aku satu-satunya
-    dewa yang mengendalikan dunia ini.'
+  m_text: Ohh.. Cerita Realmtaker? Menarik...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c752fb418692bb40963c0bbb8af7303, type: 2}
   m_sharedMaterial: {fileID: -4924313949596558863, guid: 9c752fb418692bb40963c0bbb8af7303, type: 2}

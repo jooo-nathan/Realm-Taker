@@ -697,10 +697,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Selamat datang manusia. Biarkan aku memperkenalkan diri.
-
-    Aku satu-satunya
-    dewa yang mengendalikan dunia ini.'
+  m_text: Datanglah lagi, jika kau bisa..
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9c752fb418692bb40963c0bbb8af7303, type: 2}
   m_sharedMaterial: {fileID: -4924313949596558863, guid: 9c752fb418692bb40963c0bbb8af7303, type: 2}
