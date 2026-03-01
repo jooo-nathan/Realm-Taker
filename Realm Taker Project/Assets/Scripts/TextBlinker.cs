@@ -7,7 +7,7 @@ public class TextBlinker : MonoBehaviour
     private TextMeshProUGUI teksTMP;
     private Text teksBiasa;
 
-    [SerializeField] private float kecepatan = 10.0f;
+    [SerializeField] private float kecepatan = 1.0f;
 
     void Start()
     {

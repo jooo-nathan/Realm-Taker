@@ -23,6 +23,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExitGameMenu.unity
     guid: a9b5c26dad8e69f4d9f82cc1ffbf869d
+  - enabled: 1
+    path: Assets/Scenes/NewGameMenu2.unity
+    guid: edec6fdc5f0cf7545ac15b0e860e4461
+  - enabled: 1
+    path: Assets/Scenes/Prolog1.unity
+    guid: 2688d3aa9ef7ddd41b50b00304123ed0
+  - enabled: 1
+    path: Assets/Scenes/Prolog2.unity
+    guid: 6c21e18c7d3c96d449c0c24dfaaf84f3
+  - enabled: 1
+    path: Assets/Scenes/Prolog3.unity
+    guid: 082bb2b6e277f944db29a70d6f350064
+  - enabled: 1
+    path: Assets/Scenes/Transisi.unity
+    guid: 65b33162fde3ad94594fadfc6f1de32f
+  - enabled: 1
+    path: Assets/Scenes/Stage1.unity
+    guid: b4ae8ca07f65cc049b4d4995d3572781
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

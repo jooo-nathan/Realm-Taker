@@ -3,7 +3,7 @@ using UnityEngine;
 public class ExitTheGame : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Update()
     {
         if (Input.anyKeyDown)
         {
@@ -24,9 +24,4 @@ public class ExitTheGame : MonoBehaviour
 #endif
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
