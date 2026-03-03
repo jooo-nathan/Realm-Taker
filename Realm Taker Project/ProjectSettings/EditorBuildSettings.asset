@@ -36,7 +36,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Prolog3.unity
     guid: 082bb2b6e277f944db29a70d6f350064
   - enabled: 1
-    path: Assets/Scenes/Transisi.unity
+    path: Assets/Scenes/DarkBlueTransition.unity
+    guid: f9ee6953003c6724a9018de0f4d27c86
+  - enabled: 1
+    path: Assets/Scenes/RedTransition.unity
     guid: 65b33162fde3ad94594fadfc6f1de32f
   - enabled: 1
     path: Assets/Scenes/Stage1.unity

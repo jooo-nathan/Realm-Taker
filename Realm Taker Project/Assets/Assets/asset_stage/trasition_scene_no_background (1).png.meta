@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 67e628f2c9d80f34caa24f42e6c7659d
+guid: 45d7f8d198a03a0499aa1b36636626f9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5725184139431673129
-    second: stone_0
+      213: -5903269293503255566
+    second: trasition_scene_no_background (1)_0
+  - first:
+      213: -5666485882642655707
+    second: trasition_scene_no_background (1)_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +40,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -46,7 +49,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -100,23 +103,45 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: stone_0
+      name: trasition_scene_no_background (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 79
-        height: 81
+        x: 275
+        y: 400
+        width: 1317
+        height: 252
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 92d768834a0f37f40800000000000000
-      internalID: 5725184139431673129
+      spriteID: 2fb644bbadf531ea0800000000000000
+      internalID: -5903269293503255566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: trasition_scene_no_background (1)_1
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 401
+        width: 613
+        height: 252
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5269150bc199c51b0800000000000000
+      internalID: -5666485882642655707
       vertices: []
       indices: 
       edges: []
@@ -125,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 3e1b1bac36c15c349bf4f19890a4f996
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +160,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      stone_0: 5725184139431673129
+      trasition_scene_no_background (1)_0: -5903269293503255566
+      trasition_scene_no_background (1)_1: -5666485882642655707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

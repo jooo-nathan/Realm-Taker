@@ -719,6 +719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   SceneToPlay: Prolog3
   PressAnything: 1
+  ImmediatelyLoad: 0
 --- !u!4 &963848069
 Transform:
   m_ObjectHideFlags: 0
@@ -894,7 +895,7 @@ Transform:
   m_GameObject: {fileID: 1198207493}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.05, z: 0}
+  m_LocalPosition: {x: 0, y: 1.05, z: -0.03}
   m_LocalScale: {x: 0.95, y: 0.95, z: 0.95}
   m_ConstrainProportionsScale: 1
   m_Children: []
