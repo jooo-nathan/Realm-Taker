@@ -12,21 +12,27 @@ public class SceneLoader: MonoBehaviour
     
     public Animator transition;
     public float transitionTime = 1.3f;
-    public bool animated = false;
+    public bool FirstAnimation = false;
+    public bool LastAnimation = false;
 
 
     void Update()
     {
 
-        if ((PressAnything && Keyboard.current.anyKey.wasPressedThisFrame) || ImmediatelyLoad)
+        if ((PressAnything && (Keyboard.current.anyKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame || Mouse.current.middleButton.wasPressedThisFrame)) || ImmediatelyLoad)
         {
-            if (animated)
+            if (FirstAnimation)
             {
                 StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
             }
             else
             {
                 ChangeScene();
+            }
+
+            if (LastAnimation)
+            {
+                StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
             }
         }
     }

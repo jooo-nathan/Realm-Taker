@@ -1009,12 +1009,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630ed5f522bdc0a4cb9a331161245c95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  SceneToPlay: DarkBlueTransition
+  SceneToPlay: RedTransition
   PressAnything: 1
   ImmediatelyLoad: 0
   transition: {fileID: 124264899}
   transitionTime: 1.5
-  animated: 0
+  FirstAnimation: 0
+  LastAnimation: 1
 --- !u!4 &963848069
 Transform:
   m_ObjectHideFlags: 0

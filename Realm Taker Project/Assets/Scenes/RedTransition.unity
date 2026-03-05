@@ -326,7 +326,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 2036059231}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -680,7 +681,8 @@ MonoBehaviour:
   ImmediatelyLoad: 1
   transition: {fileID: 2036059232}
   transitionTime: 3.5
-  animated: 1
+  FirstAnimation: 1
+  LastAnimation: 1
 --- !u!4 &963848069
 Transform:
   m_ObjectHideFlags: 0
@@ -806,12 +808,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 464597418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &2036059232
 Animator:
@@ -884,4 +886,3 @@ SceneRoots:
   - {fileID: 963848069}
   - {fileID: 464597418}
   - {fileID: 164012187}
-  - {fileID: 2036059231}
