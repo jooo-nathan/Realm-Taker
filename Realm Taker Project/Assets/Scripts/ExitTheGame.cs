@@ -13,6 +13,7 @@ public class ExitTheGame : MonoBehaviour
         }
     }
 
+
     public void KeluarGame()
     {
 #if UNITY_EDITOR
