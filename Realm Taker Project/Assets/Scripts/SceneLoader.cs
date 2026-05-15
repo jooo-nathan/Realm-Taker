@@ -3,41 +3,71 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 using System.Collections;
+using System.Threading;
 
-public class SceneLoader: MonoBehaviour
+public class SceneLoader : MonoBehaviour
 {
-    [SerializeField] private string SceneToPlay;
-    [SerializeField] private bool PressAnything;
-    [SerializeField] private bool ImmediatelyLoad = false;
-    
-    public Animator transition;
-    public float transitionTime = 1.3f;
-    public bool FirstAnimation = false;
-    public bool LastAnimation = false;
+    // THREE WAYS TO ANIMATE SCENE
 
+    // 1. PRESS ANYTHING
+    // 2. PRESS A SPECIFIC BUTTON
+    // 3. AUTOMATICALLY
+
+    [SerializeField] private string SceneToPlay;
+    [SerializeField] private bool PressAnything = false;
+    [SerializeField] private bool PressAButton = false;
+    [SerializeField] private bool ImmediatelyLoad = false;
+    [SerializeField] private KeyCode KeyToPress;
+
+    [SerializeField] private Animator transition;
+    [SerializeField] private float transitionTime = 0;
+    [SerializeField] private bool WithAnimation = false;
+
+    private float timer = 0;
+    private float cooldown = 1f;
+
+
+    void Awake()
+    {
+
+    }
 
     void Update()
     {
+        timer += Time.deltaTime;
 
-        if ((PressAnything && (Keyboard.current.anyKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame || Mouse.current.middleButton.wasPressedThisFrame)) || ImmediatelyLoad)
+        if (timer <= cooldown) return;
+
+        if (ImmediatelyLoad)
         {
-            if (FirstAnimation)
-            {
-                StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
-            }
-            else
+            ChangeScene();
+        }
+        else if (PressAButton)
+        {
+            if (Input.GetKeyDown(KeyToPress))
             {
                 ChangeScene();
             }
-
-            if (LastAnimation)
+        }
+        else if (PressAnything)
+        {
+            if (Keyboard.current.anyKey.wasPressedThisFrame || Mouse.current.leftButton.wasPressedThisFrame || Mouse.current.rightButton.wasPressedThisFrame || Mouse.current.middleButton.wasPressedThisFrame)
             {
-                StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+                ChangeScene();
             }
         }
     }
 
-    IEnumerator LoadLevel(int levelIndex)
+    IEnumerator ChangeSceneWithAnimation()
+    {
+        transition.SetTrigger("Start");
+
+        yield return new WaitForSeconds(transitionTime);
+
+        SceneManager.LoadScene(SceneToPlay);
+    }
+
+    /*IEnumerator LoadLevel(int levelIndex)
     {
         // Play animation
         transition.SetTrigger("Start");
@@ -45,17 +75,26 @@ public class SceneLoader: MonoBehaviour
         yield return new WaitForSeconds(transitionTime);
         // Load the next scene
         SceneManager.LoadScene(levelIndex);
-    }
-    public void ChangeScene()
-    {
+    }*/
+    void ChangeScene()
+    { 
         if (!string.IsNullOrEmpty(SceneToPlay))
         {
-            SceneManager.LoadScene(SceneToPlay);
+            if (WithAnimation)
+            {
+                StartCoroutine(ChangeSceneWithAnimation());
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneToPlay);
+            }
         }
         else
         {
-            Debug.LogError("SceneToPlay is not set.");
+            Debug.LogError("SceneToPlay is not set");        
         }
     }
 
 }
+
+    // StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));

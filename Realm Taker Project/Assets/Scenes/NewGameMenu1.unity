@@ -150,6 +150,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   SceneToPlay: NewGameMenu2
   PressAnything: 1
+  PressAButton: 0
+  ImmediatelyLoad: 0
+  KeyToPress: 0
+  transition: {fileID: 0}
+  transitionTime: 0
+  WithAnimation: 0
 --- !u!4 &22381261
 Transform:
   m_ObjectHideFlags: 0

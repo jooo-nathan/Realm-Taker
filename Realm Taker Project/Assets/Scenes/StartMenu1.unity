@@ -1168,11 +1168,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScenesChange
   SceneToPlay: StartMenu2
   PressAnything: 1
+  PressAButton: 0
   ImmediatelyLoad: 0
   transition: {fileID: 0}
-  transitionTime: 1.3
-  FirstAnimation: 0
-  LastAnimation: 0
+  transitionTime: 0
+  WithAnimation: 0
 --- !u!4 &1761975927
 Transform:
   m_ObjectHideFlags: 0
@@ -1254,11 +1254,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   SceneToPlay: 
   PressAnything: 0
+  PressAButton: 1
   ImmediatelyLoad: 0
   transition: {fileID: 0}
   transitionTime: 1.3
-  FirstAnimation: 0
-  LastAnimation: 0
+  WithAnimation: 0
 --- !u!114 &1766078268
 MonoBehaviour:
   m_ObjectHideFlags: 0

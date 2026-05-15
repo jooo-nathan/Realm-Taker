@@ -1011,11 +1011,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   SceneToPlay: RedTransition
   PressAnything: 1
+  PressAButton: 0
   ImmediatelyLoad: 0
+  KeyToPress: 0
   transition: {fileID: 124264899}
   transitionTime: 1.5
-  FirstAnimation: 0
-  LastAnimation: 1
+  WithAnimation: 1
 --- !u!4 &963848069
 Transform:
   m_ObjectHideFlags: 0

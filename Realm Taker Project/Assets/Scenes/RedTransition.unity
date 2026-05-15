@@ -678,11 +678,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
   SceneToPlay: Stage1
   PressAnything: 0
+  PressAButton: 0
   ImmediatelyLoad: 1
+  KeyToPress: 0
   transition: {fileID: 2036059232}
   transitionTime: 3.5
-  FirstAnimation: 1
-  LastAnimation: 1
+  WithAnimation: 1
 --- !u!4 &963848069
 Transform:
   m_ObjectHideFlags: 0
